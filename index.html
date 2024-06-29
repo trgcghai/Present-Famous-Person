@@ -3,7 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mesut Ozil</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+      .active {
+        border: 1px solid white;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        scale: 1.05;
+      }
+      .header-item:hover {
+        scale: 1.05;
+      }
+    </style>
+    <title>Mesut Özil</title>
   </head>
-  <body></body>
+  <body class="position-relative">
+    <div
+      class="position-fixed top-0 start-0 end-0 py-2 bg-danger d-flex align-items-center justify-content-center"
+      style="gap: 24px"
+    >
+      <a
+        href="#him"
+        class="header-item b-block px-3 py-2 active text-decoration-none text-white text-capitalize"
+        >Mesut Özil</a
+      >
+      <a
+        href="#familien"
+        class="header-item b-block px-3 py-2 text-decoration-none text-white text-capitalize"
+        >Siene Familien</a
+      >
+      <a
+        href="#"
+        class="header-item b-block px-3 py-2 text-decoration-none text-white text-capitalize"
+        >section 1</a
+      >
+      <a
+        href="#"
+        class="header-item b-block px-3 py-2 text-decoration-none text-white text-capitalize"
+        >section 1</a
+      >
+    </div>
+    <div class="container" style="margin-top: 57px">
+      <section
+        class="d-flex bg-danger align-items-center justify-content-around py-3"
+        id="him"
+      >
+        <div class="w-50 text-white">
+          <div class="fs-2 fw-bold">Das ist Mesut Özil</div>
+          Er kommt aus Gelsenkirchen Stadt. Er ist 36 Jahre alt. Mesut Özil ist
+          ein Fußballspieler von Beruf.
+        </div>
+        <img src="./images/images.jpg" class="w-25 rounded-circle" />
+      </section>
+
+      <section class="py-3" id="familien">
+        <div class="fs-2 fw-bold" style="margin-left: 81px">Siene Familien</div>
+        <div class="row mt-4">
+          <div
+            class="col-6 d-flex align-items-center flex-column justify-content-center"
+          >
+            <img src="./images/vater-474.jpg" class="w-50 rounded-circle" />
+            <div class="mt-2 fs-5">Sien Vater: Mustafa Özil</div>
+          </div>
+          <div
+            class="col-6 d-flex align-items-center flex-column justify-content-center"
+          >
+            <img src="./images/mutter.png" class="w-50 rounded-circle" />
+            <div class="mt-2 fs-5">Siene Mutter: Gulizar Özil</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 32px">
+          <div
+            class="col-3 d-flex align-items-center flex-column justify-content-center"
+          >
+            <img src="./images/mutter.png" class="w-50 rounded-circle" />
+            <div class="mt-2 fs-5">Siene Mutter: Gulizar Özil</div>
+          </div>
+          <div
+            class="col-3 d-flex align-items-center flex-column justify-content-center"
+          >
+            <img src="./images/mutter.png" class="w-50 rounded-circle" />
+            <div class="mt-2 fs-5">Siene Mutter: Gulizar Özil</div>
+          </div>
+          <div
+            class="col-3 d-flex align-items-center flex-column justify-content-center"
+          >
+            <img src="./images/mutter.png" class="w-50 rounded-circle" />
+            <div class="mt-2 fs-5">Siene Mutter: Gulizar Özil</div>
+          </div>
+          <div
+            class="col-3 d-flex align-items-center flex-column justify-content-center"
+          >
+            <img src="./images/mutter.png" class="w-50 rounded-circle" />
+            <div class="mt-2 fs-5">Siene Mutter: Gulizar Özil</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const items = document.querySelectorAll(".header-item");
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          items.forEach((item) => item.classList.remove("active"));
+          item.classList.add("active");
+        });
+      });
+    </script>
+  </body>
 </html>
